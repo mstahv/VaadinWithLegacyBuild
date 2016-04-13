@@ -27,7 +27,7 @@
         <h3>The Vaadin part:</h3>
         <p>Below you can see an embedded Vaadin application</p>
         <style>.valo.v-app {height:auto;background:transparent;}</style>
-        <vaadin:ui url="/vaadinui"/>
+        <vaadin:ui url="/vaadinui" widgetset="AppWidgetset"/>
         
     </body>
 </html:html>
