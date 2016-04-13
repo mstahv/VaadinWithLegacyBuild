@@ -29,6 +29,14 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>vaadin-servlet</servlet-name>
+        <servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+        <init-param>
+            <param-name>ui</param-name>
+            <param-value>com.myapp.VaadinUI</param-value>
+        </init-param>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -36,6 +44,11 @@
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vaadin-servlet</servlet-name>
+        <url-pattern>/vaadinui/*</url-pattern>
+        <url-pattern>/VAADIN/*</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
