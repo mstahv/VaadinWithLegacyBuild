@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="vaadin" uri="/vaadin" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -15,5 +16,11 @@
                 the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
                 welcome page and also update the welcome-file setting in</i>
             <tt>web.xml</tt>.</p>
+        
+        <h3>The Vaadin part:</h3>
+        <p>Below you can see an embedded Vaadin application</p>
+        <style>.valo.v-app {height:auto;background:transparent;}</style>
+        <vaadin:ui url="/vaadinui"/>
+
     </body>
 </html>

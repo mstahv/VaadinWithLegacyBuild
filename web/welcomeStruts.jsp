@@ -4,6 +4,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
+<%@ taglib prefix="vaadin" uri="/vaadin" %>
 
 <html:html lang="true">
     <head>
@@ -22,6 +23,11 @@
         
         <h3><bean:message key="welcome.heading"/></h3>
         <p><bean:message key="welcome.message"/></p>
+        
+        <h3>The Vaadin part:</h3>
+        <p>Below you can see an embedded Vaadin application</p>
+        <style>.valo.v-app {height:auto;background:transparent;}</style>
+        <vaadin:ui url="/vaadinui"/>
         
     </body>
 </html:html>
